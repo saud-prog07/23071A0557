@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart App - Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="authContainer">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div>
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required />
+                <span id="registerUsernameError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" required />
+                <span id="registerEmailError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required />
+                <span id="registerPasswordError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="registerConfirmPassword">Confirm Password:</label>
+                <input type="password" id="registerConfirmPassword" name="confirmPassword" required />
+                <span id="registerConfirmPasswordError" class="error-message"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+        <hr />
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required />
+                <span id="loginEmailError" class="error-message"></span>
+            </div>
+            <div>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required />
+                <span id="loginPasswordError" class="error-message"></span>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="container" id="shoppingCartContainer" style="display:none;">
+        <div class="navigation">
+            <button id="showProducts">Products</button>
+            <button id="showCart">View Cart</button>
+        </div>
+
+        <div id="productListContainer">
+            <h2>Products</h2>
+            <div id="productList" class="product-list">
+            </div>
+        </div>
+
+        <div id="cartView" style="display:none;">
+            <h2>Shopping Cart</h2>
+            <div id="cartItems">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+git remote add origin https://github.com/saud-prog07/23071A0557.git
+git branch -M main
+git push -u origin main
